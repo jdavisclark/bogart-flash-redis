@@ -1,0 +1,23 @@
+{
+    "name": "bogart-flash-redis",
+    "description": "redis data provider for the bogart flash middleware",
+    "version": "0.0.1",
+    "keywords": ["bogart", "flash", "redis"],
+    "author": "Davis Clark",
+    "email": "davis.clark@whiteboard-it.com",
+    "main": "./lib/redisDataProvider",
+    "directories": { "lib": "./lib" },
+    "bugs": {
+      "url": "https://github.com/jdc0589/bogart-flash-redis/issues",
+      "email": "jdc0589@gmail.com"
+    },
+    "dependencies": {
+      "hiredis": "=0.1.12",
+      "redis": "=0.6.7",
+      "q" : "=0.7.2",
+      "node-uuid": ">=1.2.0"
+    },
+    "devDependencies": {
+      "expresso": ">= 0.8.1"
+    }
+}
