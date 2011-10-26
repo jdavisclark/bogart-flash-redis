@@ -5,7 +5,7 @@
     "keywords": ["bogart", "flash", "redis"],
     "author": "Davis Clark",
     "email": "davis.clark@whiteboard-it.com",
-    "main": "./lib/redisDataProvider",
+    "main": "./lib/redisProviders",
     "directories": { "lib": "./lib" },
     "bugs": {
       "url": "https://github.com/jdc0589/bogart-flash-redis/issues",

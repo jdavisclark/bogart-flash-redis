@@ -3,7 +3,7 @@ Redis provider(s) for the Bogart "Flash" JSGI middleware.
 ## Example:
 ```javascript
 var bogart = require("bogart"),
-  RedisProvider = require("redisDataProvider");
+  providers = require("bogart-flash-redis");
 
 var config = function(show, create, update, destroy) {
   show('/flash', function(req) {
@@ -13,7 +13,7 @@ var config = function(show, create, update, destroy) {
   });
 };
 
-var provider = new RedisProvider();
-var app = bogart.middleware.Flash({flashDataProvider: provider}, bogart.router(config));
+var DataProvider = providers.DataProvider;
+var app = bogart.middleware.Flash({flashDataProvider: new DataProvider()}, bogart.router(config));
 bogart.start(app, {port:1337});
 ```
