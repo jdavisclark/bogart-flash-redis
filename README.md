@@ -1,4 +1,4 @@
-Redis data store provider for the Bogart "Flash" JSGI middleware.
+Redis provider(s) for the Bogart "Flash" JSGI middleware.
 
 ## Example:
 ```javascript
