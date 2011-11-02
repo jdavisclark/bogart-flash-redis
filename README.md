@@ -14,6 +14,10 @@ var config = function(show, create, update, destroy) {
 };
 
 var DataProvider = providers.DataProvider;
-var app = bogart.middleware.Flash({flashDataProvider: new DataProvider()}, bogart.router(config));
+var flashConfig = {
+  options: {},
+  flashDataProvider: new DataProvider()
+};
+var app = bogart.middleware.Flash(flashConfig, bogart.router(config));
 bogart.start(app, {port:1337});
 ```
